@@ -21,6 +21,7 @@ class CreateSpecialitiesTable extends Migration
             $table->double('price', 8,2)->default(0.00);
             $table->string('image',255);
             $table->string('url',255);
+            $table->string('icon',255);
             $table->enum('state',['active','inactive'])->default('inactive');
             $table->timestamps();
         });
