@@ -5,7 +5,7 @@
 	</div>
 	<div class="row justify-content-center align-items-center">
 		@foreach($curses as $curse)
-			<div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3 curse-content">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 curse-content">
 				<div class="card text-left">
 					<img src="{{$curse->image}}" class="card-img-top curse-img w-100" alt="{{$curse->nick}}">
   					<div class="card-body">
