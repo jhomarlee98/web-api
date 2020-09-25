@@ -1,5 +1,5 @@
 @if(!empty ($curses))
-<section id="curses" class="curses container-md">
+<section id="curses" class="curses container-sm">
 	<div class="row justify-content-center">
 		<h4>ESPECIALIDADES</h4>
 	</div>
