@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-| Inicio
+inicio
 @endsection
 @section('content')
 	@include('widgets.header')
