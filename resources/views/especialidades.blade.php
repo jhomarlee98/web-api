@@ -4,6 +4,7 @@
 @endsection
 @section('content')
     @include('widgets.header')
+    @include('widgets.speciality_slide')
     @include('widgets.enlaces')
     @include('widgets.specialities')
     <hr>

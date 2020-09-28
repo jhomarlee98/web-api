@@ -42,11 +42,13 @@ class WebController extends Controller
     }
     public function call_specilities($nick=null){
         if (!empty($nick)){
+            $speciality_count=$this->data->nickspecialityCount($nick);
             $specialities=$this->data->nickSpecialities($nick);
-            return view('especialidad')->with(compact('specialities'));
+            return view('especialidad')->with(compact('specialities','speciality_count'));
         }else{
+            $speciality_count=$this->data->specialityCount();
             $specialities=$this->data->listSpecialities(null);
-            return view('especialidades')->with(compact('specialities'));
+            return view('especialidades')->with(compact('specialities','speciality_count'));
         }
 
     }

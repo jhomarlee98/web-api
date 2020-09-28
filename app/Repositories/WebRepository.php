@@ -31,6 +31,11 @@ class WebRepository
         return Speciality::where('state','active')
             ->count();
     }
+    public function nickspecialityCount($nick){
+        return Speciality::where('state','active')
+            ->where('nick',$nick)
+            ->count();
+    }
 
 
     public function listSliders(){
