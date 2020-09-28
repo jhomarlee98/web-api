@@ -2,6 +2,7 @@
 namespace App\Repositories;
 
 use App\Models\{Curse,Slider,Speciality,SpecialityCurse,Service};
+use function GuzzleHttp\Promise\all;
 
 class WebRepository
 {
@@ -15,11 +16,20 @@ class WebRepository
             ->get();
     }
 
-    public function listSpecialities(){
+    public function listSpecialities($count){
         return Speciality::where('state','active')
             ->orderBy('cod','asc')
-            ->limit(8)
+            ->limit($count)
             ->get();
+    }
+    public function nickSpecialities($nick){
+        return Speciality::where('state','active')
+            ->where('nick',$nick)
+            ->get();
+    }
+    public function specialityCount(){
+        return Speciality::where('state','active')
+            ->count();
     }
 
 

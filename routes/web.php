@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{WebController,CurseController};
+use App\Http\Controllers\{WebController,CurseController,SpecialityController};
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +16,9 @@ use App\Http\Controllers\{WebController,CurseController};
 Route::get('/', [WebController::class, 'index']);
 
 Route::get('/curso/{nick}', [CurseController::class, 'call_name'])->name('curso.ver');
+
+Route::get('/especialidades/{nick?}', [WebController::class, 'call_specilities'])->name('specialities.list');
+
 
 //Route::get('/', function () {
 //    return view('welcome');

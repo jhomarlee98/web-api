@@ -12,7 +12,7 @@
                             <p class="text-content text-left">
                                 {{$speciality->description}}
                             </p>
-                            <a href="" class="btn btn-sm btn-outline-danger" role="button">Ver detalle</a>
+                            <a href="{{route('specialities.list',$speciality->nick)}}" class="btn btn-sm btn-outline-danger" role="button">Ver detalle</a>
                         </div>
                         <div class="card-footer speciality-footer text-muted ">
                             <h6 class="text-danger text-sm">
@@ -25,6 +25,14 @@
                     </div>
                 </div>
             @endforeach
+            <div class="col-12">
+                <a class="text-center" href="{{route('specialities.list',null)}}">
+                    <h6>
+                        Ver todas las especialidades
+                    </h6>
+                    <h6><i class="fas fa-angle-double-down"></i></h6>
+                </a>
+            </div>
         </div>
     </section>
 @endif

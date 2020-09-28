@@ -26,7 +26,7 @@ class WebController extends Controller
         $sliders=$this->data->listSliders();
         $sliders_count=$this->data->sliderCount();
 
-        $specialities=$this->data->listSpecialities();
+        $specialities=$this->data->listSpecialities(8);
 
         return view('inicio')->with(compact('curses','sliders','sliders_count','services','services_count','specialities'));
     }
@@ -39,6 +39,16 @@ class WebController extends Controller
     public function create()
     {
         //
+    }
+    public function call_specilities($nick=null){
+        if (!empty($nick)){
+            $specialities=$this->data->nickSpecialities($nick);
+            return view('especialidad')->with(compact('specialities'));
+        }else{
+            $specialities=$this->data->listSpecialities(null);
+            return view('especialidades')->with(compact('specialities'));
+        }
+
     }
 
     /**
