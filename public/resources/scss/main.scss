@@ -10,7 +10,7 @@ $danger:#b9133d;
 $info:#00b379;
 $banner:#112b3c;
 $pink:#ff8f8f;
-$title-curse: #205b3a;
+$title-content: #205b3a;
 $blue:#4b8cbf;
 
 //importando Bootstrap
@@ -158,7 +158,7 @@ a{
 	.row{
 		.curse-content{
             .card-title{
-                color: $title-curse;
+                color: $title-content;
             }
 			.card{
 				margin: 1rem 0;
@@ -179,6 +179,44 @@ a{
 }
 .tached{
     text-decoration: line-through;
+}
+.text-content{
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+}
+.text-sm{
+    font-size: .7rem;
+}
+.specialities{
+    .speciality-container{
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 0.5rem;
+        color: $primary;
+        margin: 1.5rem 0;
+        height: max-content;
+        .image-speciality{
+            transition: 0.8s;
+            border-radius: 0.5rem 0.5rem 0 0;
+            &:hover{
+                filter: grayscale(55%);
+            }
+        }
+        .speciality-body{
+            padding: 1rem;
+            .title-speciality{
+                color: $title-content;
+                font-weight: bold;
+                font-size: smaller;
+                height: 2rem;
+            }
+        }
+        .image-speciality{
+            width: 100%;
+        }
+    }
 }
 
 .servicios{

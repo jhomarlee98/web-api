@@ -15,10 +15,23 @@
 			<span>Av. Túpac Amaru 1000 - Rimac Alt. Puerta 5 UNI</span>
 			<p>Paradero honorio delgado del metropolitano.</p>
 		</div>
-		<div class="col-lg-3 col-12 text-justify">
-			<span> <i class="fas fa-envelope-open-text"></i> sistemasuni.info@uni.edu.pe</span> <br>
-			<span> <i class="fas fa-phone-alt"></i> 200-90-60  | 1-Informes <br> 2-Certificados | 3-Administración</span> <br>
-			<span> <i class="fas fa-mobile-alt"></i> 939-364-947  |  <i class="fas fa-mobile-alt"></i> 939-364-979</span>
+		<div class="col-lg-3 col-12 text-left">
+            <ul>
+                <li>
+                    <i class="fas fa-envelope-open-text"></i> informes@sistemasuni.edu.pe
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i> 200-90-60
+                    <ol>
+                        <li>Informes</li>
+                        <li>Certificados</li>
+                        <li>Administración</li>
+                    </ol>
+                </li>
+                <li>
+                    <i class="fas fa-mobile-alt"></i> 939-364-947  |  <i class="fas fa-mobile-alt"></i> 939-364-979
+                </li>
+            </ul>
 		</div>
 	</div>
 	<div class="row justify-content-center align-items-center">

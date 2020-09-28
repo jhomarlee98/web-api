@@ -6,7 +6,7 @@ inicio
 	@include('widgets.header')
 	@include('widgets.slider')
 	@include('widgets.enlaces')
-    @include('widgets.curses')
+    @include('widgets.specialities')
 	<hr>
 	@include('widgets.servicios')
 

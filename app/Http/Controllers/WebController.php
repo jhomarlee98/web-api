@@ -19,12 +19,16 @@ class WebController extends Controller
     public function index()
     {
         $curses=$this->data->listCurses();
+
         $services=$this->data->listServices();
         $services_count=$this->data->serviceCount();
+
         $sliders=$this->data->listSliders();
         $sliders_count=$this->data->sliderCount();
 
-        return view('inicio')->with(compact('curses','sliders','sliders_count','services','services_count'));
+        $specialities=$this->data->listSpecialities();
+
+        return view('inicio')->with(compact('curses','sliders','sliders_count','services','services_count','specialities'));
     }
 
     /**

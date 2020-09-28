@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Curse;
 use Illuminate\Http\Request;
+use App\Repositories\WebRepository;
+
 
 class CurseController extends Controller
 {
@@ -12,6 +14,11 @@ class CurseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct(WebRepository $data)
+    {
+        $this->data=$data;
+    }
+
     public function index()
     {
         //
@@ -44,9 +51,14 @@ class CurseController extends Controller
      * @param  \App\Models\Curse  $curse
      * @return \Illuminate\Http\Response
      */
+    public function call_name($nick ){
+        $curses=$this->data->curse($nick);
+        return view('curso')->with(compact('curses'));
+    }
     public function show(Curse $curse)
     {
-        //
+
+
     }
 
     /**

@@ -16,6 +16,7 @@ class CreateSpecialitiesTable extends Migration
         Schema::create('specialities', function (Blueprint $table) {
             $table->id('cod');
             $table->string('name',255);
+            $table->string('nick',255);
             $table->text('description');
             $table->integer('number');
             $table->double('price', 8,2)->default(0.00);

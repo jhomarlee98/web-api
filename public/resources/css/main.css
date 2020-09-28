@@ -10096,6 +10096,47 @@ a:hover {
   text-decoration: line-through;
 }
 
+.text-content {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+}
+
+.text-sm {
+  font-size: 0.7rem;
+}
+
+.specialities .speciality-container {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.5rem;
+  color: #163546;
+  margin: 1.5rem 0;
+  height: -webkit-max-content;
+  height: max-content;
+}
+.specialities .speciality-container .image-speciality {
+  transition: 0.8s;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.specialities .speciality-container .image-speciality:hover {
+  filter: grayscale(55%);
+}
+.specialities .speciality-container .speciality-body {
+  padding: 1rem;
+}
+.specialities .speciality-container .speciality-body .title-speciality {
+  color: #205b3a;
+  font-weight: bold;
+  font-size: smaller;
+  height: 2rem;
+}
+.specialities .speciality-container .image-speciality {
+  width: 100%;
+}
+
 .servicios {
   margin: 1rem 0;
 }

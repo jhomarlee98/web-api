@@ -10,6 +10,19 @@ class WebRepository
         return Curse::where('state','active')
         ->orderBy('cod', 'asc')->get();
     }
+    public function curse($nick){
+        return Curse::where('nick',$nick)
+            ->get();
+    }
+
+    public function listSpecialities(){
+        return Speciality::where('state','active')
+            ->orderBy('cod','asc')
+            ->limit(8)
+            ->get();
+    }
+
+
     public function listSliders(){
         return Slider::where('state','active')
             ->orderBy('cod','asc')->get();
