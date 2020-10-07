@@ -10,12 +10,16 @@
 				</a>
 			</div>
 			<div class="col-4 col-md-4 col-lg-2 text-center">
-				<a href="#" >
-					<div class="icon-enlace">
+                <div class="dropdown">
+					<div class="icon-enlace" type="button" id="FormasdePago" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<h5> <i class="fas fa-money-bill-wave"></i></h5>
-						<h6 class="text-uppercase enlace-text">formas de pago</h6>	
+						<h6 class="text-uppercase enlace-text" >formas de pago</h6>
 					</div>
-				</a>
+                    <div class="dropdown-menu" aria-labelledby="FormasdePago">
+                        <a class="dropdown-item" href="#">BCP</a>
+                        <a class="dropdown-item" href="#">Scotiabank</a>
+                    </div>
+                </div>
 			</div>
 			<div class="col-4 col-md-4 col-lg-2 text-center">
 				<a href="#" >

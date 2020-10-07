@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>sistemas uni - @yield('title') </title>
+	<title>@yield('title') SistemasUNI  </title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('resources/css/main.css') }}">
     <script src="https://kit.fontawesome.com/22a95f274b.js" crossorigin="anonymous"></script>

@@ -44,7 +44,8 @@ class WebController extends Controller
         if (!empty($nick)){
             $speciality_count=$this->data->nickspecialityCount($nick);
             $specialities=$this->data->nickSpecialities($nick);
-            return view('especialidad')->with(compact('specialities','speciality_count'));
+            $curses=$this->data->list_curseSpeciality($nick);
+            return view('especialidad')->with(compact('specialities','speciality_count','curses'));
         }else{
             $speciality_count=$this->data->specialityCount();
             $specialities=$this->data->listSpecialities(null);

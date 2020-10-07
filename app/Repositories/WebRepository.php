@@ -2,6 +2,7 @@
 namespace App\Repositories;
 
 use App\Models\{Curse,Slider,Speciality,SpecialityCurse,Service};
+use Illuminate\Support\Facades\DB;
 use function GuzzleHttp\Promise\all;
 
 class WebRepository
@@ -35,6 +36,10 @@ class WebRepository
         return Speciality::where('state','active')
             ->where('nick',$nick)
             ->count();
+    }
+
+    public function list_curseSpeciality($nick){
+        return DB::select('call curse_by_speciality(?)',[$nick]);
     }
 
 

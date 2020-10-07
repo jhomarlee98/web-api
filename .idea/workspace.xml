@@ -20,10 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="461f6402-23fd-446a-9d2d-bdb39f29b747" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/widgets/especialidad_curso.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/widgets/especialidades.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/widgets/especialidades_inicio.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Curse.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Curse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Speciality.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Speciality.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/SpecialityCurse.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/SpecialityCurse.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/WebRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/WebRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/especialidad.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/especialidad.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/especialidades.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/especialidades.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inicio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inicio.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/widgets/enlaces.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/widgets/enlaces.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/widgets/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/widgets/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/widgets/speciality_slide.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/widgets/speciality_slide.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,6 +204,13 @@
       <workItem from="1601214699234" duration="9313000" />
       <workItem from="1601253532410" duration="1464000" />
       <workItem from="1601303358314" duration="18212000" />
+      <workItem from="1601413374584" duration="11933000" />
+      <workItem from="1601483931820" duration="6383000" />
+      <workItem from="1601602463044" duration="674000" />
+      <workItem from="1601741000143" duration="8476000" />
+      <workItem from="1601844725613" duration="3232000" />
+      <workItem from="1601909039902" duration="18000" />
+      <workItem from="1601922379842" duration="3222000" />
     </task>
     <servers />
   </component>
@@ -210,10 +230,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1601327319657">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1601744917649">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601327319657" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601744917649" />
     <state width="527" height="446" key="SwitcherDM" timestamp="1601325850246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

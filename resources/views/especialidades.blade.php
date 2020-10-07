@@ -1,16 +1,15 @@
 @extends('layouts.app')
 @section('title')
-    especialidades
+    especialidades |
 @endsection
 @section('content')
     @include('widgets.header')
     @include('widgets.speciality_slide')
     @include('widgets.enlaces')
-    @include('widgets.specialities')
+    @include('widgets.especialidades')
     <hr>
     @include('widgets.servicios')
 
-    <!--@include('widgets.contactInicio')-->
 
     @include('widgets.footer')
 @endsection

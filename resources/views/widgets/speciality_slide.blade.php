@@ -10,8 +10,7 @@
     <div class="carousel-inner bg-banner">
         {{$active=0}}
         @foreach($specialities as $speciality)
-            {{$active++}}
-            <div class="carousel-item @if ($active==1) active @endif ">
+            <div class="carousel-item @if ($active==0) active  @endif" id="{{$active=$active+1}}">
                 <div class="container">
                     <div class="row justify-content-around align-items-center space-ned">
                         <div class="col-lg-5 col-md-7 col-sm-12">

@@ -1,12 +1,11 @@
 @extends('layouts.app')
 @section('title')
-inicio
 @endsection
 @section('content')
 	@include('widgets.header')
 	@include('widgets.slider')
 	@include('widgets.enlaces')
-    @include('widgets.specialities')
+    @include('widgets.especialidades_inicio')
 	<hr>
 	@include('widgets.servicios')
 
